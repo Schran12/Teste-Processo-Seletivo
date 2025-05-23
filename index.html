@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teste Front-End Júnior</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- TOPO -->
+  <header class="top-bar">
+    <p class="menu-contact">11 1234-1234</p>
+    <p class="menu-contact">11 1234-1234</p>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#"><img class="logo" src="img/logo.png" alt="Logo" /></a>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="menu" id="menu">
+      <li><a href="#">Home</a></li>
+
+      <li>
+        <a href="#">Empresa</a>
+        <ul class="submenu">
+          <a href="#">Submenu 1</a>
+          <a href="#">Submenu 2</a>
+          <a href="#">Submenu 3</a>
+          <div class="has-submenu">
+            <a href="#" class="submenu-toggle">Submenu 3 ▸</a>
+            <ul class="submenu submenu-nivel2">
+              <a href="#">Submenu 3.1</a>
+              <a href="#">Submenu 3.2</a>
+              <a href="#">Submenu 3.3</a>
+              <a href="#">Submenu 3.4</a>
+            </ul>
+          </div>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="#">Clientes</a>
+        <ul class="submenu">
+          <a href="#">Submenu 1</a>
+          <a href="#">Submenu 2</a>
+          <a href="#">Submenu 3</a>
+        </ul>
+      </li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- CARROSSEL -->
+  <section class="carousel-container">
+    <div class="carousel-track">
+      <div class="carousel-slide"><img src="img/banner-1.jpg" alt="Slide 1"></div>
+      <div class="carousel-slide"><img src="img/banner-2.jpg" alt="Slide 2"></div>
+      <div class="carousel-slide"><img src="img/banner-3.jpg" alt="Slide 3"></div>
+    </div>
+    <button class="carousel-btn prev-btn">&#10094;</button>
+    <button class="carousel-btn next-btn">&#10095;</button>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="main-content">
+    <section class="test-section">
+      <div class="test-info">
+        <h2><span class="span-titulo">Conteúdo</span> Site</h2>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae facere natus, facilis numquam hic,
+          reprehenderit in, est corrupti animi odit repellat aut provident? Perspiciatis unde numquam non adipisci et?
+        </p>
+      </div>
+      <div class="test-image">
+        <img class="img-assunto" src="img/img-assunto.jpg" alt="Imagem do Teste">
+      </div>
+    </section>
+
+    <section class="boxes">
+      <h2 class="titulo-box">Boxes de <span class="span-titulo">Destaque</span></h2>
+      <div class="boxes-container">
+        <div class="box">
+          <div class="box-image"><img class="imagem-centro" src="img/img-centro-1.avif" alt=""></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a excepturi enim eos assumenda, rem quos
+            molestias.</p>
+        </div>
+        <div class="box">
+          <div class="box-image"><img class="imagem-centro" src="img/img-centro-1.avif" alt=""></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a excepturi enim eos assumenda, rem quos
+            molestias.</p>
+        </div>
+        <div class="box">
+          <div class="box-image"><img class="imagem-centro" src="img/img-centro-1.avif" alt=""></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a excepturi enim eos assumenda, rem quos
+            molestias.</p>
+        </div>
+        <div class="box">
+          <div class="box-image"><img class="imagem-centro" src="img/img-centro-1.avif" alt=""></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a excepturi enim eos assumenda, rem quos
+            molestias.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="#"><img class="logo-footer" src="img/logo.png" alt="Logo da empresa"></a>
+      </div>
+      <nav class="footer-nav">
+        <a href="#sobre">Home</a>
+        <a href="#projetos">Empresa</a>
+        <a href="#contato">Clientes</a>
+        <a href="#contato">Contatos</a>
+      </nav>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/matheus-schran12/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://schran12.github.io/site-schran/" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="app.js"></script>
+
+</body>
+
+</html>
